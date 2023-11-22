@@ -13,6 +13,7 @@ const apiUrl = "https://cex.io/api/ticker/%s/USD"
 
 func GetRate(currency string) (*Rate, error) {
 	if len(currency) == 0 {
+		// return statemnet for nil val
 		return nil, errors.New("currency empty")
 	}
 	res, err := http.Get(fmt.Sprintf(apiUrl, currency))
