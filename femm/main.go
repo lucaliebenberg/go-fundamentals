@@ -28,6 +28,7 @@ func main() {
 	server.HandleFunc("/hello", handleHello)
 	server.HandleFunc("/template", handleTemplate)
 	server.HandleFunc("/api/exhibitions", api.Get)
+	server.HandleFunc("/api/exhibitions/new", api.Post)
 
 	fs := http.FileServer(http.Dir("./public"))
 	server.Handle("/", fs)
