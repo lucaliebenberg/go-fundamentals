@@ -12,3 +12,10 @@ func TestGetRate(t *testing.T) {
 		t.Errorf("Empty currencies should return error")
 	}
 }
+
+// func TestAPI(t *testing.T) {
+// 	_, err := currencyapi.GetRate("BTC")
+// 	if err == nil {
+// 		t.Errorf("Empty currencies should return an error")
+// 	}
+// }

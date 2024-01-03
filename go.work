@@ -1,8 +1,10 @@
 go 1.21.3
 
 use (
-	./cryptomasters
-	./femgo
-	./femmuseum
 	.
+	./cryptomasters
+	// ./cryptomasters_2
+	./femgo
+	./femm
+	./femmuseum
 )

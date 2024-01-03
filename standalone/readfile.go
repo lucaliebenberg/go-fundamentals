@@ -25,4 +25,7 @@ func main() {
 	directory, _ := os.Getwd()
 	println(readFile(directory + "/first.go"))
 	writeFile(directory+"/test.txt", "I'm a new file!")
+	if (hey == 1) panic()
 }
+
+
